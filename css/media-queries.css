@@ -1,0 +1,40 @@
+@media screen and (min-width: 460px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header > img {
+        margin: 0 1em 0 0;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    header span,
+    header strong {
+        display: block;
+    }
+
+    .introductory-sections,
+    .services-list,
+    .footer-sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .introductory-sections section,
+    .services-list li,
+    .footer-sections section {
+        max-width: none;
+        flex-basis: 48%;
+    }
+}
+
+@media screen and (min-width: 1452px) {
+    .services-list li {
+        max-width: none;
+        flex-basis: 18%;
+    }
+}

@@ -1,0 +1,137 @@
+/* Paul Irish's Universal box-sizing: border-box
+   https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* Basic elements */
+
+body {
+    padding: 16px;
+    margin: 0 auto;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+}
+
+dd {
+    margin-left: 0;
+}
+
+dd + dt {
+    margin-top: 1.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    /* Color suggested by putting #23b9fe – picked from logo – into
+       https://learnui.design/tools/accessible-color-generator.html */
+    color: #007cbc;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol {
+    padding-left: 1.5em;
+}
+
+p {
+    max-width: 75ch;
+    margin: 1.5em 0;
+}
+
+li {
+    max-width: 75ch;
+}
+
+
+/* Layout specifics */
+header {
+    padding: 16px;
+    margin: -16px -16px 0;
+    background: black;
+    color: white;
+    font-size: 1.25em;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+header > img {
+    display: block;
+    height: 150px;
+    margin: 0 auto 1em;
+}
+
+nav ul,
+.services-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+nav li,
+.services-list h3 {
+    display: flex;
+    align-items: center;
+    height: 3.75rem;
+    padding-left: 4.25rem;
+    margin: 0.75em 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 1.25;
+    vertical-align: middle;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main,
+.footer-sections {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.upgrade { background-image: url('../img/temp_icon_pump_352.png'); }
+.maintenance { background-image: url('../img/temp_icon_tools_352.png'); }
+.overhauls { background-image: url('../img/temp_icon_clock_352.png'); }
+.tests { background-image: url('../img/temp_icon_check_352.png'); }
+.emergencies { background-image: url('../img/temp_icon_alert_352.png'); }
+
+.services-list p {
+    margin-top: 0.75em;
+}
+
+footer {
+    padding: 16px;
+    margin: 3em -16px -16px;
+    background: black;
+    color: white;
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+footer a {
+    color: #23b9fe;
+}
