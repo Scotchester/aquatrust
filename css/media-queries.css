@@ -5,7 +5,7 @@
         justify-content: center;
     }
 
-    header > img {
+    .logo {
         margin: 0 1em 0 0;
     }
 }
@@ -16,25 +16,117 @@
         display: block;
     }
 
-    .introductory-sections,
-    .services-list,
-    .footer-sections {
+    .introductory-sections {
+        overflow: auto;
+    }
+
+    .repair-photo {
+        display: block;
+        width: 50%;
+        float: right;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    .services-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .introductory-sections section,
-    .services-list li,
-    .footer-sections section {
+    .services-list li {
         max-width: none;
         flex-basis: 48%;
     }
+
+    .services h2 {
+        text-align: center;
+    }
+
+    .footer-sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer-sections img {
+        flex-basis: 50%;
+        margin: 0 1em 0 0;
+    }
+
+    .contact-info {
+        flex-basis: 40%;
+    }
+
+    .contact-info h2 {
+        margin-top: 1rem;
+    }
+
+    footer p {
+        flex-basis: 100%;
+    }
 }
 
-@media screen and (min-width: 1452px) {
+@media screen and (min-width: 800px) {
+    .footer-sections img {
+        /* flex-basis: 28%; */
+    }
+
+    .contact-info {
+        /* flex-basis: 16%; */
+    }
+
+    .contact-info h2 {
+        margin-top: 1rem;
+    }
+
+    footer p {
+        /* flex-basis: 40%; */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .services-list::after {
+        content: '';
+        flex: auto;
+    }
+
     .services-list li {
-        max-width: none;
+        flex-basis: 32%;
+    }
+
+    footer {
+        padding: 0 1em 0 0;
+    }
+
+    .footer-sections {
+        justify-content: space-between;
+    }
+
+    .footer-sections img {
+        flex-basis: 28%;
+    }
+
+    .contact-info {
+        flex-basis: 18%;
+    }
+
+    .contact-info h2 {
+        margin-top: 1rem;
+    }
+
+    footer p {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .services-list::after {
+        display: none;
+    }
+
+    .services-list li {
         flex-basis: 18%;
     }
 }
