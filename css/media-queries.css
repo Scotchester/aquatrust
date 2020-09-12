@@ -89,7 +89,7 @@
 @media screen and (min-width: 1000px) {
     .services-list::after {
         content: '';
-        flex: auto;
+        flex-basis: 32%;
     }
 
     .services-list li {
