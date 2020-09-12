@@ -131,11 +131,11 @@ nav a {
     margin: 0 auto;
 }
 
-.upgrade { background-image: url('../img/temp_icon_pump_352.png'); }
-.maintenance { background-image: url('../img/temp_icon_tools_352.png'); }
-.overhauls { background-image: url('../img/temp_icon_clock_352.png'); }
-.tests { background-image: url('../img/temp_icon_check_352.png'); }
-.emergencies { background-image: url('../img/temp_icon_alert_352.png'); }
+.upgrade { background-image: url('../img/icon_pump_120.png'); }
+.maintenance { background-image: url('../img/icon_tools_120.png'); }
+.overhauls { background-image: url('../img/icon_clock_120.png'); }
+.tests { background-image: url('../img/icon_check_120.png'); }
+.emergencies { background-image: url('../img/icon_alert_120.png'); }
 
 .services-list p {
     margin-top: 0.75em;
