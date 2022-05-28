@@ -80,6 +80,11 @@ header {
     margin: 0 auto 1em;
 }
 
+header span,
+header strong {
+    display: block;
+}
+
 .repair-photo {
     display: block;
     margin-top: 1em;
